@@ -1,5 +1,6 @@
 **/target/
 .idea
+sky-server/src/main/resources/application-dev.yml
 *.iml
 *.class
 *Test.java
