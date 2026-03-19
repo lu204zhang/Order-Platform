@@ -37,6 +37,13 @@ public interface DishMapper {
 
     void deleteByIds(List<Long> ids);
 
+    /**
+     * 动态条件查询菜品
+     * @param dish 查询条件
+     * @return 菜品列表
+     */
+    List<Dish> list(Dish dish);
+
     @AutoFill(value = OperationType.UPDATE)
     void update(Dish dish);
 }
